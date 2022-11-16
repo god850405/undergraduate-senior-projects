@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#DDDDDD"
+    tools:context="com.example.food.description">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/desToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></android.support.v7.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/desToolbar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/phone_pic"
+                    android:layout_width="20dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/time"
+                    android:layout_marginTop="5dp"
+                    android:layout_toLeftOf="@+id/tel"
+                    android:layout_toStartOf="@+id/tel"
+                    android:adjustViewBounds="true"
+                    app:srcCompat="@mipmap/phone" />
+
+                <TextView
+                    android:id="@+id/time"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/tel"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toEndOf="@+id/time_pic"
+                    android:layout_toRightOf="@+id/time_pic"
+                    android:text="營業時間"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/add"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tel"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toEndOf="@+id/phone_pic"
+                    android:layout_toRightOf="@+id/phone_pic"
+                    android:gravity="center_vertical"
+                    android:text="地址"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/description_pic"
+                    android:layout_width="20dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/address"
+                    android:layout_alignStart="@+id/address"
+                    android:layout_below="@+id/address"
+                    android:layout_marginTop="5dp"
+                    android:adjustViewBounds="true"
+                    app:srcCompat="@mipmap/description" />
+
+                <TextView
+                    android:id="@+id/tel"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/time_pic"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toEndOf="@+id/time_pic"
+                    android:layout_toRightOf="@+id/time_pic"
+                    android:gravity="center_vertical"
+                    android:text="電話"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/summary"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/add"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toEndOf="@+id/description_pic"
+                    android:layout_toRightOf="@+id/description_pic"
+                    android:gravity="center_vertical"
+                    android:text="描述"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/iv"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="20dp"
+                    android:adjustViewBounds="true"
+                    android:padding="5dp"
+                    android:src="@drawable/pic_null"
+                    android:visibility="visible" />
+
+                <ImageView
+                    android:id="@+id/address"
+                    android:layout_width="20dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/phone_pic"
+                    android:layout_alignStart="@+id/phone_pic"
+                    android:layout_below="@+id/phone_pic"
+                    android:layout_marginTop="5dp"
+                    android:adjustViewBounds="true"
+                    app:srcCompat="@mipmap/add" />
+
+                <ImageView
+                    android:id="@+id/time_pic"
+                    android:layout_width="20dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/iv"
+                    android:layout_marginTop="15dp"
+                    android:layout_toLeftOf="@+id/iv"
+                    android:layout_toStartOf="@+id/iv"
+                    android:adjustViewBounds="true"
+                    app:srcCompat="@mipmap/time" />
+            </RelativeLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.food.description">
+
+    <TextView
+        android:id="@+id/diary_description_title"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/diary_description_createdate"
+        android:layout_marginTop="46dp"
+        android:gravity="center_vertical"
+        android:text="標題"
+        android:textAlignment="center"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/diary_description_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/diary_description_add_text"
+        android:layout_marginStart="30dp"
+        android:background="#c2e5c2"
+        android:gravity="left|center_vertical"
+        android:text="地址"
+        android:textAlignment="gravity"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/diary_description_add_text" />
+
+    <TextView
+        android:id="@+id/diary_description_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/diary_description_description_text"
+        android:layout_marginStart="30dp"
+        android:background="#c2e5c2"
+        android:gravity="top|left"
+        android:text="內容"
+        android:textAlignment="gravity"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/diary_description_description_text" />
+
+    <TextView
+        android:id="@+id/diary_description_user"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/diary_description_user_text"
+        android:layout_marginStart="210dp"
+        android:layout_marginTop="326dp"
+        android:background="#f1d493"
+        android:gravity="center_vertical"
+        android:text="建立者"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/diary_description_title" />
+
+    <TextView
+        android:id="@+id/diary_description_createdate"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/diary_description_createdate_text"
+        android:layout_marginStart="210dp"
+        android:background="#f1d493"
+        android:gravity="center_vertical"
+        android:text="建立日期"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/diary_description_user_text" />
+
+    <TextView
+        android:id="@+id/diary_description_add_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/diary_description_title"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="13dp"
+        android:background="#56aee1"
+        android:text="食記地址"
+        android:textAlignment="gravity"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/diary_description_title" />
+
+    <TextView
+        android:id="@+id/diary_description_description_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/diary_description_add"
+        android:layout_marginStart="30dp"
+        android:background="#56aee1"
+        android:gravity="left|center_vertical"
+        android:text="食記介紹"
+        android:textAlignment="gravity"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/diary_description_add" />
+
+    <TextView
+        android:id="@+id/diary_description_user_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="210dp"
+        android:text="作者"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/diary_description_user" />
+
+    <TextView
+        android:id="@+id/diary_description_createdate_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/diary_description_user"
+        android:layout_marginStart="210dp"
+        android:text="建立日期"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/diary_description_createdate" />
+
+
+</android.support.constraint.ConstraintLayout>

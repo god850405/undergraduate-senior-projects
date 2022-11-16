@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ListView
+        android:id="@+id/comment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/in"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+    </ListView>
+
+    <RelativeLayout
+        android:id="@+id/in"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="#FFFBDBE6"
+        android:gravity="start">
+
+        <EditText
+            android:id="@+id/editText"
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/star_img1"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:background="#e0e0e0"
+            android:ems="10"
+            android:gravity="start"
+            android:hint="評論"
+            android:inputType="text|textMultiLine"
+            android:textAlignment="gravity" />
+
+        <TextView
+            android:id="@+id/textD"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/editText"
+            android:layout_alignParentTop="true"
+            android:layout_alignStart="@+id/editText"
+            android:layout_weight="1"
+            android:paddingLeft="5dp"
+            android:text="評價："
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/star_img1"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/textD"
+            android:layout_toRightOf="@+id/textD"
+            android:layout_weight="1"
+            app:srcCompat="@mipmap/star_null" />
+
+        <ImageView
+            android:id="@+id/star_img2"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/star_img1"
+            android:layout_toRightOf="@+id/star_img1"
+            android:layout_weight="1"
+            app:srcCompat="@mipmap/star_null" />
+
+        <ImageView
+            android:id="@+id/star_img3"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/star_img2"
+            android:layout_toRightOf="@+id/star_img2"
+            android:layout_weight="1"
+            app:srcCompat="@mipmap/star_null" />
+
+        <ImageView
+            android:id="@+id/star_img4"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/star_img3"
+            android:layout_toRightOf="@+id/star_img3"
+            android:layout_weight="1"
+            app:srcCompat="@mipmap/star_null" />
+
+        <ImageView
+            android:id="@+id/star_img5"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignBottom="@+id/star_img4"
+            android:layout_toEndOf="@+id/star_img4"
+            android:layout_toRightOf="@+id/star_img4"
+            android:layout_weight="1"
+            app:srcCompat="@mipmap/star_null" />
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="314dp"
+        android:layout_marginStart="314dp"
+        android:layout_weight="1"
+        android:background="#FFFBDC"
+        android:text="送出" />
+
+</RelativeLayout>

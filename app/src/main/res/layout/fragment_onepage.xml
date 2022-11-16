@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.food.description">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageButton
+                android:id="@+id/right"
+                android:layout_width="48dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:layout_marginTop="105dp"
+                android:layout_weight="1"
+                android:background="?android:attr/panelBackground"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@mipmap/right" />
+
+            <ImageButton
+                android:id="@+id/left"
+                android:layout_width="48dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="105dp"
+                android:layout_weight="1"
+                android:background="?android:attr/panelBackground"
+                android:saveEnabled="false"
+                android:scaleType="centerInside"
+                android:visibility="gone"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@mipmap/left" />
+
+            <ImageView
+                android:id="@+id/image"
+                android:layout_width="250dp"
+                android:layout_height="250dp"
+                android:layout_marginEnd="9dp"
+                android:layout_marginStart="9dp"
+                android:layout_weight="1"
+                android:visibility="gone"
+                app:layout_constraintEnd_toStartOf="@+id/right"
+                app:layout_constraintStart_toEndOf="@+id/left"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@android:drawable/screen_background_dark_transparent" />
+
+            <TextView
+                android:id="@+id/diary_description_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="標題"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:visibility="invisible" />
+        </android.support.constraint.ConstraintLayout>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/address"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:srcCompat="@mipmap/add" />
+
+                <TextView
+                    android:id="@+id/diary_description_add"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="地址"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/description_pic"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:adjustViewBounds="true"
+                    app:srcCompat="@mipmap/description" />
+
+                <TextView
+                    android:id="@+id/diary_description_description"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="內容"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/writer"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:srcCompat="@mipmap/writer" />
+
+                <TextView
+                    android:id="@+id/diary_description_user"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="作者"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/time"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:srcCompat="@mipmap/date" />
+
+                <TextView
+                    android:id="@+id/diary_description_createdate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="日期"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+            </TableRow>
+
+        </TableLayout>
+
+    </LinearLayout>
+
+</ScrollView>

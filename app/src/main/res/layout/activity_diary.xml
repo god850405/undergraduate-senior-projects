@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.food.diary">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/DToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="20">
+
+            <ImageButton
+                android:id="@+id/btnAddPhoto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_gravity="right"
+                android:layout_marginLeft="145dp"
+                android:layout_marginStart="145dp"
+                android:layout_marginTop="7dp"
+                android:layout_weight="20"
+                android:background="?android:attr/panelBackground"
+                app:srcCompat="@android:drawable/ic_input_add"
+                tools:layout_editor_absoluteX="132dp"
+                tools:layout_editor_absoluteY="21dp" />
+
+            <TextView
+                android:id="@+id/addtext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="10dp"
+                android:layout_toEndOf="@+id/btnAddPhoto"
+                android:layout_toRightOf="@+id/btnAddPhoto"
+                android:layout_weight="20"
+                android:text="新增照片"
+                android:textSize="18sp"
+                tools:layout_editor_absoluteX="164dp"
+                tools:layout_editor_absoluteY="28dp" />
+        </RelativeLayout>
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="20">
+
+            <LinearLayout
+                android:id="@+id/setphoto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="20"
+                android:background="#e0e0e0"
+                android:orientation="horizontal">
+
+            </LinearLayout>
+
+        </HorizontalScrollView>
+
+    </LinearLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="100dp">
+
+        <EditText
+            android:id="@+id/diary_content"
+            android:layout_width="304dp"
+            android:layout_height="262dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="24dp"
+            android:background="#cceeff"
+            android:ems="10"
+            android:gravity="top|left"
+            android:inputType="textMultiLine"
+            android:textAlignment="gravity"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/diary_address" />
+
+        <TextView
+            android:id="@+id/inAdd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginStart="40dp"
+            android:text="店家地址"
+            app:layout_constraintBottom_toTopOf="@+id/diary_address"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/diary_title" />
+
+        <Button
+            android:id="@+id/commit"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginStart="148dp"
+            android:layout_marginTop="8dp"
+            android:background="#cceeff"
+            android:text="提交"
+            android:textColor="#000000"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/diary_content" />
+
+        <EditText
+            android:id="@+id/diary_address"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="24dp"
+            android:background="#cceeff"
+            android:ems="10"
+            android:hint="地址"
+            android:inputType="text"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/diary_title" />
+
+        <TextView
+            android:id="@+id/inCon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginStart="40dp"
+            android:text="對店家的描述及感想"
+            app:layout_constraintBottom_toTopOf="@+id/diary_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/diary_address" />
+
+        <EditText
+            android:id="@+id/diary_title"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="24dp"
+            android:background="#cceeff"
+            android:ems="10"
+            android:hint="標題"
+            android:inputType="text"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/inTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="8dp"
+            android:text="食記標題"
+            app:layout_constraintBottom_toTopOf="@+id/diary_title"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </android.support.constraint.ConstraintLayout>
+
+</LinearLayout>

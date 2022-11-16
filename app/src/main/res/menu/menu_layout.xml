@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        app:showAsAction="always"
+        android:title="登入"
+        android:id="@+id/menu_login"
+        />
+    <item
+        app:showAsAction="always"
+        android:title="註冊"
+        android:id="@+id/menu_register"
+        />
+</menu>

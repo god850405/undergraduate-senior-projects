@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/d_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/pic_logo"
+        android:layout_toRightOf="@+id/pic_logo"
+        android:gravity="center_vertical"
+        android:text="標題"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/d_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/d_title"
+        android:layout_toRightOf="@+id/d_title"
+        android:gravity="center_vertical"
+        android:text="店名"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/d_add"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/d_title"
+        android:layout_toEndOf="@+id/add"
+        android:layout_toRightOf="@+id/add"
+        android:text="地址"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/d_tel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/phone"
+        android:layout_marginTop="5dp"
+        android:layout_toEndOf="@+id/phone"
+        android:layout_toRightOf="@+id/phone"
+        android:text="電話"
+        android:textSize="14sp" />
+
+    <ImageView
+        android:id="@+id/pic_logo"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:adjustViewBounds="true"
+        android:background="@android:color/white" />
+
+    <ImageView
+        android:id="@+id/add"
+        android:layout_width="20dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/d_title"
+        android:layout_alignStart="@+id/d_title"
+        android:layout_below="@+id/d_title"
+        android:layout_toRightOf="@+id/pic_logo"
+        android:adjustViewBounds="true"
+        app:srcCompat="@mipmap/add" />
+
+    <ImageView
+        android:id="@+id/phone"
+        android:layout_width="20dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/add"
+        android:layout_alignStart="@+id/add"
+        android:layout_below="@+id/add"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@+id/pic_logo"
+        android:adjustViewBounds="true"
+        app:srcCompat="@mipmap/phone" />
+
+</RelativeLayout>

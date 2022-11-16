@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">好食記</string>
+    <string name="register_url">Http://163.13.201.94/107_SD/regist.php</string>
+    <string name="login_url">Http://163.13.201.94/107_SD/login.php</string>
+    <string name="set_url">Http://163.13.201.94/107_SD/set.php</string>
+    <string name="diary_url">Http://163.13.201.94/107_SD/diary.php</string>
+    <string name="food_diary_url">Http://163.13.201.94/107_SD/food_diary.php</string>
+    <string name="favorite_url">Http://163.13.201.94/107_SD/favorite.php</string>
+    <string name="ID">ID</string>
+    <string name="title_activity_main2">Main2Activity</string>
+</resources>
